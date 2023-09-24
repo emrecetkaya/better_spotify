@@ -38,7 +38,6 @@ const SongDetails = () => {
 
       <div className="mb-10">
         <h2 className="text-white text-3xl font-bold">Lyrics:</h2>
-
         <div className="mt-5">
           {songData?.sections[1].type === 'LYRICS'
             ? songData?.sections[1]?.text.map((line, i) => (
@@ -58,7 +57,6 @@ const SongDetails = () => {
         handlePauseClick={handlePauseClick}
         handlePlayClick={handlePlayClick}
       />
-
     </div>
   );
 };
